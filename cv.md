@@ -25,6 +25,8 @@
   React
   TypeScript
   PM
+  Jira
+  SQL and database
 - ## Interests & Extra information
   UI & UX design _(I strive to develop in these areas and delve more professionally into them, and not leave them at the “hobby” level. Graduated from art school. Always attracted to art and design!)_
 
