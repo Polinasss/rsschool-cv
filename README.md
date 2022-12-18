@@ -1,2 +1,2 @@
 # rsschool-cv
-https://Polinasss.github.io/rsschool-cv/
+https://polinasss.github.io/rsschool-cv/
