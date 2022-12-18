@@ -5,15 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Polina CV-html</title>
+  <title>Polina CV-html. Cross-Check</title>
 </head>
 <body>
   <header>
-    <div>
-      <img src="img/myPhoto.png" alt="myPhoto">
-    </div>
-    <div>
-      <h3>Contacts for communication</h3>
+    <nav>
+      <ul>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#english">English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <img src="./img/myPhoto.jpeg" alt="my photo">
+      <h1>Polina Gushcha</h1>
+      <h3>Front-end developer</h3>
+    </section>
+
+    <section id="aboutme">
+      <h2>About me</h2>
+      <p>Hi! Im Polina. At the moment I am a 4th year student of the faculty of Economics at BSU, specializing in economic informatics. This
+        specialty includes such disciplines as: business analysis, web design, programming, project management and also economy.</p>
+    </section>
+
+    <section id="contacts">
+      <h2>Contacts</h2>
       <ul>
         <li><b>Telephone:</b> <a href="tel:+375298009244">+375298009244</a></li>
         <li><b>Telegram:</b> <a href="https://t.me/PolinaGushcha">@PolinaGushcha</a></li>
@@ -21,44 +45,75 @@
         <li><b>G-mail:</b> <a href="mailto:polina129889@gmail.com">polina129889@gmail.com</a></li>
         <li><b>VK:</b> <a href="https://vk.com/id175072910">Link</a></li>
       </ul>
-    </div>
-    <div>
-      <h3>Skills</h3>
-        <p>HTML &amp; CSS - 80%</p>
-        <p>JavaScript - 80%</p>
-        <p>React - 60%</p>
-        <p>English - B1</p>
-        <p>Project Management - 60%</p>
-        <p><i>(always have something to strive)</i></p>
-    </div>
-  </header>
-  <main>
-    <section class="introduction">
-      <p>I&rsquo;m Polina. At the moment I am a 4th year student of the Belarusian State University of Economics, specializing in economic informatics. This specialty includes the study of such areas as: business analysis, web design, programming in C#, Java, C++, Python, project management. Сompleted an internship at the &quot;System Technologies&quot; company as a PM. Also took courses from TMS and IT Academy as a front-end developer on React.</p>
     </section>
-    <section class="aboutMe">
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS, SCSS, адаптивная верстка</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Git</li>
+        <li>Figma, Photoshop, Illustrator</li>
+        <li>SQL и базы данных</li>
+      </ul>
+    </section>
+
+    <section id="code">
+      <h2>Code</h2>
+      <pre><code>const student = { math: 5, biology: 3, language: 2, isOboltus: 'yes' };
+function isNum (e) {
+  let copy = {};
+  for (let key in e) {
+    if (typeof e[key] === 'number') {
+      copy[key] = e[key]*2;
+    } else {
+      copy[key] = e[key];
+    }
+  }
+  return copy;
+}
+const studentCopy = isNum(student);
+console.log(student);
+console.log(studentCopy);</code></pre>
+    </section>
+
+    <section id="project">
+      <h2>Projects</h2>
+      <a href="https://github.com/Polinasss/PizzaProject_TMS">Pizza project</a>
+      <a href="https://github.com/Polinasss/TMSfinalProject">Wiki "Age of empires"</a>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
       <div>
-        <h3>Education</h3>
-        <p>Currently I am studying for a bachelor&rsquo;s degree at the Belarusian State University of the Faculty of Economics, specializing in economic informatics. I entered the university in 2019, I will finish my studies in 2023. Not planning to go to the magistracy.</p>
-      </div>
-      <div>
-        <h3>Qualification</h3>
-        <p>Completed the course &quot;Website development with HTML, CSS &amp; JavaScript&quot;</p>
-        <p>Completed the course &quot;Frontend developer with JS &amp; React&quot;. Teach Me Skills.</p>
-      </div>
-      <div>
-        <h3>Job Objective</h3>
-          <p>My main goal at the moment is to become a specialist in the field of front-end development. On this course I would like to receive, assimilate and learn to apply in practice as much knowledge as I can. And I believe that, having such qualities as hard work, curiosity and the ability to learn, I will be able to achieve it.</p>
-      </div>
-      <div>
-        <h3>Interests &#38; Extra information</h3>
-          <p>UI &#38; UX design (I strive to develop in these areas and delve more professionally into them, and not leave them at the hobby level. Graduated from art school. Always attracted to art and design!)</p>
+        <h3>2019-2023</h3>
+        <p>BSU, faculty of Economics, economic informatics</p>
       </div>
     </section>
-    <aside>
-      <p>17.09.2022</p>
-      <img src="img/logo-rsschool3.png" alt="">
-    </aside>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div>
+        <h3>Course from IT Academy</h3>
+        <p>"Website development with HTML, CSS & JavaScript"</p>
+        <h3>Course from TeachMeSkills</h3>
+        <p>"Frontend developer with JS & React"</p>
+      </div>
+    </section>
+
+    <section id="english">
+      <h2>Languages</h2>
+      <p>English (B1)</p>
+      <p>Russian (native)</p>
+    </section>
   </main>
+
+  <footer>
+    <div>19.12.2023</div>
+    <div><a href="https://rs.school/js/"><img src="./img/logo-rsschool3.png" alt="rsschool"></a></div>
+    <div><a href="https://github.com/Polinasss"><img src="./img/github.png" alt="github"></a></div>
+  </footer>
 </body>
 </html>
